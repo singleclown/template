@@ -1,0 +1,26 @@
+{
+    "name": "<%- name %>",
+    "options": {
+        "type": "salt",
+        "template": "<%- template %>",
+        "npm": "<%- npm %>",
+        "vars": {
+            "__LOCAL__": true
+        },
+        "buildvars": {
+            "__LOCAL__": [ false ]
+        },
+        "alias": {
+      "app": "app",
+      "clientConfig": "clientConfig",
+      "images": "images",
+      "pages": "pages",
+      "components": "components"
+    },
+    "port": 3000,
+    "proxy": {
+      "/cmb": "http://cmb.hituns.com:444"
+    }
+    
+    }
+}

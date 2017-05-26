@@ -1,0 +1,27 @@
+{
+  "name": "module",
+  "options": {
+    "type": "salt",
+    "template": "/Users/sigmundliu/.nowa-gui/template/nowa-template-salt-v_1",
+    "npm": "cnpm",
+    "vars": {
+      "__LOCAL__": true
+    },
+    "buildvars": {
+      "__LOCAL__": [
+        false
+      ]
+    },
+    "alias": {
+      "app": "app",
+      "clientConfig": "clientConfig",
+      "images": "images",
+      "pages": "pages",
+      "components": "components"
+    },
+    "port": 3000,
+    "proxy": {
+      "/cmb": "http://cmb.hituns.com:444"
+    }
+  }
+}
